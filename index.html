@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="stylesheet" href="css/style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+</head>
+
+<body>
+    <script src="js/index.js"></script>
+    <header>
+        <img src="resources/images/logo.png" />
+        <h1><a href="index.html">Inicio</a></h1>
+        <h1><a href="download.html">Descarga</a></h1>
+        <h1><a href="guide.html">Guia</a></h1>
+
+    </header>
+    <main>
+        <section id="introduccion" class="flex-container">
+            <div class="text-container">
+                <h2>Introducción</h2>
+                <p>Esta es la historia de Davinci, un amable joven con una vida normal, que descubrirá el malévolo plan
+                    de la cadena
+                    de restaurantes Cheng Pooh Garden, que pondrá en peligro a su ser más querido.
+                    Tendrá que enfrentr al malvado J. Chen, que se lo pondrá muy complicado para poder derrotarlo.
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="resources/images/logo2.jpeg" alt="Descripción de la imagen">
+            </div>
+        </section>
+        <section id="personajes" class="flex-container">
+            <div class="image-container">
+                <img id="characters-image" src="resources/images/logo2.jpeg">
+            </div>
+            <div class="text-container">
+                <h2>Personajes</h2>
+                <nav>
+                    <a href="#"
+                        onclick="cambiarTexto('Davinci'); changeImage('Davinci'); event.preventDefault()">Davinci</a>
+                    <a href="#" onclick="cambiarTexto('J. Cheng'); changeImage('J. Cheng'); event.preventDefault()">J.
+                        Cheng</a>
+                    <a href="#"
+                        onclick="cambiarTexto('Freezer'); changeImage('Freezer'); event.preventDefault()">Freezer</a>
+                    <a href="#" onclick="cambiarTexto('Nigel'); changeImage('Nigel'); event.preventDefault()">Nigel</a>
+                    <a href="#"
+                        onclick="cambiarTexto('Entrenador'); changeImage('Entrenador'); event.preventDefault()">Entrenador</a>
+
+                </nav>
+                <p id="descripcion-personaje">Descubre la historia de cada personaje.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <img src="resources/images/logo.png" alt="Descripción de la imagen">
+            <img src="resources/images/luisvives.png" alt="Descripción de la imagen" class="luisvives">
+            <img src="resources/images/pegi.png" alt="Descripción de la imagen" class="pegi">
+            <img src="resources/images/unity.png" alt="Descripción de la imagen">
+        </div>
+        <p>Proyecto realizado por Ivan y Kevin de DAM</p>
+        Sin ánimo de lucro © 2024
+        <p></p>
+    </footer>
+</body>
+
+</html>
