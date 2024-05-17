@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #a9a9a9;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #a9a9a9;
+    padding: 1%;
+    text-align: center;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+
+    a {
+        padding: 10px;
+    }
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    margin-right: 2%;
+    font-size: 20px;
+}
+
+header h1 a {
+    color: #a9a9a9;
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    background-color: #555;
+}
+
+header img {
+    height: 55px;
+    width: 110px;
+    margin-right: 4%;
+}
+
+.flex-container {
+    display: flex;
+    background-color: #555;
+
+    video {
+        margin-bottom: 30px;
+        margin-left: 40px;
+    }
+}
+
+.text-container {
+    flex: 1;
+    padding: 2%;
+    margin-top: 10px;
+
+    h2 {
+        margin-left: 50px;
+        font-size: 40px;
+    }
+
+    p {
+        margin-top: 30px;
+        font-size: 25px;
+        margin-left: 50px;
+    }
+
+    button {
+        width: 300px;
+        height: 200px;
+        background-color: #333;
+        border: 1px solid black;
+        font-size: 30px;
+        margin-left: 50px;
+        cursor: pointer;
+        transition: background-color O.3 ease;
+
+    }
+
+    button:active {
+        background-color: #393939;
+        /* Cambia el color de fondo al clickear */
+    }
+
+    a {
+        text-decoration: none;
+        /* Quita el subrayado */
+        color: black;
+    }
+}
+
+.image-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+
+    /* Centra verticalmente */
+    /* Establece la altura al 100% del viewport */
+    img {
+        margin-left: 90px;
+        max-width: 400px;
+        max-height: 500px;
+    }
+
+    button {
+        width: 100px;
+        height: 50px;
+        background-color: #333;
+        border: 1px solid black;
+        font-size: 30px;
+        margin-right: 0px;
+        margin-left: 30px;
+        cursor: pointer;
+        transition: background-color O.3 ease;
+    }
+
+    .left {
+        border-top: 50px solid transparent;
+        /* Altura del triángulo */
+        border-bottom: 50px solid transparent;
+        /* Altura del triángulo */
+        border-left: 100px solid #333;
+        /* Ancho del triángulo y color */
+        background-color: transparent;
+    }
+
+    .right {
+        border-top: 50px solid transparent;
+        /* Altura del triángulo */
+        border-bottom: 50px solid transparent;
+        /* Altura del triángulo */
+        border-right: 100px solid #333;
+        /* Ancho del triángulo y color */
+        background-color: transparent;
+    }
+
+    button:active {
+        background-color: #555;
+        /* Cambia el color de fondo al clickear */
+    }
+}
+
+main img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 600px;
+    height: 450px;
+    margin-right: 5%;
+    padding: 2%;
+}
+
+.footer-container {
+    img {
+        max-width: 100px;
+        max-height: auto;
+        min-height: auto;
+        padding: 2%;
+    }
+
+    .luisvives {
+        width: 70px;
+        height: auto;
+        padding: 2%;
+    }
+
+    .pegi {
+        width: 50px;
+        height: 65px;
+        padding: 2%;
+    }
+}
+
+.fade-in-out {
+    animation: fadeInOut 0.5s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+#personajes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.responsive-image {
+    max-width: 100%;
+    /* La imagen nunca será más ancha que su contenedor */
+    height: auto;
+    /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="stylesheet" href="css/download.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+</head>
+
+<body>
+    <script src="js/download.js"></script>
+    <header>
+        <img src="resources/images/logo.png" />
+        <h1><a href="index.html">Inicio</a></h1>
+        <h1><a href="download.html">Descarga</a></h1>
+        <h1><a href="guide.html">Guia</a></h1>
+
+    </header>
+    <main>
+        <section id="introduccion" class="flex-container">
+            <div class="text-container">
+                <h2>DESCARGA</h2>
+                <p>DESCARGA EL INSTALADOR DEL JUEGO COMPLETAMENTE GRATIS DESDE ESTA PÁGINA
+                </p>
+                <Button onclick="descargarArchivo()">Descargar</Button>
+                <p>Para instalar el juego correctamente ejecuta el instalador y sigue las instruciones que da este mismo
+                    :)</p>
+            </div>
+        </section>
+        <section id="personajes" class="flex-container">
+            <div class="text-container">
+                <h2>CAPTURAS DEL JUEGO</h2>
+            </div>
+        </section>
+        <section id="personajes" class="flex-container">
+            <div class="image-container">
+                <button class="right" onclick="changeImage1();"></button>
+                <img id="image" src="resources/images/areaCostera_1.png" class="responsive-image" />
+                <br><br>
+                <button class="left" onclick="changeImage2();"></button>
+            </div>
+        </section>
+        <section id="personajes" class="flex-container">
+            <div class="text-container">
+                <h2>ILUSTRACIONES DE HISTORIA</h2>
+            </div>
+            <div class="image-container">
+                <button class="right" onclick="changeVideo1();"></button>
+                <video width="400" controls id="video">
+                    <source src="resources/videos/video1.mp4" type="video/mp4">
+                </video>
+                <br><br>
+                <button class="left" onclick="changeVideo2();"></button>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <img src="resources/images/logo.png" alt="Descripción de la imagen">
+            <img src="resources/images/luisvives.png" alt="Descripción de la imagen" class="luisvives">
+            <img src="resources/images/pegi.png" alt="Descripción de la imagen" class="pegi">
+            <img src="resources/images/unity.png" alt="Descripción de la imagen">
+        </div>
+        <p>Proyecto realizado por Ivan y Kevin de DAM</p>
+        Sin ánimo de lucro © 2024
+        <p></p>
+    </footer>
+</body>
+
+</html>
