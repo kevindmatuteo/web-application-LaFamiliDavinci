@@ -2,10 +2,11 @@ var arrayImages = ["resources/images/areaCostera_1.png", "resources/images/areaC
     "resources/images/trayectoria_1.png", "resources/images/trayectoria_2.png", "resources/images/trayectoria_3.png"];
 var index = 0;
 
-var arrayVideos = ["resources/videos/video1.mp4", "resources/videos/video2.mp4", "resources/videos/video3.mp4"]
-var videoIndex = 0;
+var arrayDrawings = ["resources/images/draw1.jpeg", "resources/images/draw2.jpeg",
+    "resources/images/draw3.jpeg", "resources/images/draw4.jpeg", "resources/images/draw5.jpeg"];
+var drawingIndex = 0;
 
-function changeImage1() {
+function changeGameImage1() {
     var img = document.getElementById("image");
     img.classList.add("fade-in-out"); // Agrega la clase de animación
     setTimeout(() => {
@@ -19,7 +20,7 @@ function changeImage1() {
     }
     img.src = arrayImages[index]; // Actualiza la imagen con la siguiente del array
 }
-function changeImage2() {
+function changeGameImage2() {
     var img = document.getElementById("image");
     img.classList.add("fade-in-out"); // Agrega la clase de animación
     setTimeout(() => {
@@ -34,38 +35,39 @@ function changeImage2() {
     img.src = arrayImages[index]; // Actualiza la imagen con la imagen anterior en el array
 }
 
-function changeVideo1() {
-    var video = document.getElementById("video");
-    video.classList.add("fade-in-out"); // Agrega la clase de animación
-    setTimeout(() => {
-        // Quita la clase después de que termine la animación
-        video.classList.remove("fade-in-out");
-    }, 500); // Ajusta este tiempo para que coincida con la duración de la animación en milisegundos
+function changeDrawing1() {
 
-    videoIndex = (videoIndex + 1) % arrayVideos.length; // Incrementa el índice y vuelve a 1 si supera la longitud del array
-    if (video.src == arrayVideos[2]) {
-        videoIndex = 2
-    }
-    video.src = arrayVideos[videoIndex]; // Actualiza la imagen con la siguiente del array
-}
-function changeVideo2() {
-    var video = document.getElementById("video");
-    video.classList.add("fade-in-out"); // Agrega la clase de animación
+    var img = document.getElementById("drawings");
+    img.classList.add("fade-in-out");
     setTimeout(() => {
-        // Quita la clase después de que termine la animación
-        video.classList.remove("fade-in-out");
-    }, 500); // Ajusta este tiempo para que coincida con la duración de la animación en milisegundos
+        img.classList.remove("fade-in-out");
+    }, 500);
 
-    videoIndex = (videoIndex - 1 + arrayVideos.length) % arrayVideos.length; // Resta el índice y asegúrate de que no sea negativo
-    if (video.src == arrayVideos[2]) {
-        videoIndex = 2
+    drawingIndex = (drawingIndex + 1) % arrayDrawings.length;
+    if (img.src == arrayDrawings[2]) {
+        drawingIndex = 2
     }
-    video.src = arrayVideos[videoIndex]; // Actualiza la imagen con la imagen anterior en el array
+    img.src = arrayDrawings[drawingIndex];
 }
+function changeDrawing2() {
+    var img = document.getElementById("drawings");
+    img.classList.add("fade-in-out");
+    setTimeout(() => {
+        img.classList.remove("fade-in-out");
+    }, 500);
+
+    drawingIndex = (drawingIndex - 1 + arrayDrawings.length) % arrayDrawings.length;
+    if (img.src == arrayDrawings[2]) {
+        drawingIndex = 2
+    }
+    img.src = arrayDrawings[drawingIndex];
+}
+
+
 
 function descargarArchivo() {
     // URL del archivo que deseas descargar
-    var url = 'installer/juegoPrueba.txt';
+    var url = 'installer/LaFamiliaDaVinci_installer_V.0.8.5.exe';
 
     var enlaceDescarga = document.createElement("a");
     enlaceDescarga.href = url;
