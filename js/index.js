@@ -37,19 +37,19 @@ function changeImage(nombrePersonaje) {
     var url = "";
     switch (nombrePersonaje) {
         case 'Davinci':
-            url = "resources/images/trayectoria_3.png";
+            url = "resources/images/davinci.jpeg";
             break;
         case 'J. Cheng':
             url = "resources/images/jcheng.jpeg";
             break;
         case 'Freezer':
-            url = "resources/images/trayectoria_1.png";
+            url = "resources/images/freezer.jpeg";
             break;
         case 'Nigel':
             url = "resources/images/nigel.jpeg";
             break;
         case 'Entrenador':
-            url = "resources/images/areaCostera_1.png";
+            url = "resources/images/entrenador.jpeg";
             break;
         default:
             url = "resources/images/logo2.jpeg";

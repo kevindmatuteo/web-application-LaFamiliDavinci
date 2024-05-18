@@ -124,13 +124,13 @@ header img {
     /* Establece la altura al 100% del viewport */
     img {
         margin-left: 90px;
-        max-width: 400px;
-        max-height: 500px;
+        max-width: 600px;
+        max-height: 700px;
     }
 
     button {
-        width: 100px;
-        height: 50px;
+        width: 80px;
+        height: 40px;
         background-color: #333;
         border: 1px solid black;
         font-size: 30px;
@@ -141,21 +141,21 @@ header img {
     }
 
     .left {
-        border-top: 50px solid transparent;
+        border-top: 30px solid transparent;
         /* Altura del triángulo */
-        border-bottom: 50px solid transparent;
+        border-bottom: 30px solid transparent;
         /* Altura del triángulo */
-        border-left: 100px solid #333;
+        border-left: 40px solid #333;
         /* Ancho del triángulo y color */
         background-color: transparent;
     }
 
     .right {
-        border-top: 50px solid transparent;
+        border-top: 30px solid transparent;
         /* Altura del triángulo */
-        border-bottom: 50px solid transparent;
+        border-bottom: 30px solid transparent;
         /* Altura del triángulo */
-        border-right: 100px solid #333;
+        border-right: 40px solid #333;
         /* Ancho del triángulo y color */
         background-color: transparent;
     }
