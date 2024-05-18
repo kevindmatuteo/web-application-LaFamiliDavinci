@@ -71,7 +71,7 @@ function descargarArchivo() {
 
     var enlaceDescarga = document.createElement("a");
     enlaceDescarga.href = url;
-    enlaceDescarga.download = "juegoPrueba.txt";
+    enlaceDescarga.download = "LaFamiliaDaVinci_installer_V.0.8.5.exe";
 
     // Ocultar el enlace y añadirlo al documento
     enlaceDescarga.style.display = "none";
